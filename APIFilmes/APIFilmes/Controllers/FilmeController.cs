@@ -16,6 +16,8 @@ namespace APIFilmes.Controllers
     [Route("[controller]")]
     public class FilmeController : ControllerBase
     {
+
+        #region Ligação contexto — controlador
         private FilmeContext _context;
         private IMapper _mapper;
 
@@ -24,8 +26,10 @@ namespace APIFilmes.Controllers
             _context = context;
             _mapper = mapper;
         }
+        #endregion
 
 
+        #region Create
         [HttpPost]
         public IActionResult AdicionaFilme([FromBody] FilmeDto filmeDto)
         {
@@ -35,9 +39,10 @@ namespace APIFilmes.Controllers
             _context.SaveChanges();
             return CreatedAtAction(nameof(RecuperaFilmesPorId), new { id = filme.id }, filme);
         }
+        #endregion
 
 
-        [HttpGet]
+        #region Read
         [HttpGet]
         public IEnumerable<Filme> RecuperaFilmes()
         {
@@ -58,8 +63,10 @@ namespace APIFilmes.Controllers
 
             return NotFound();
         }
+        #endregion
 
 
+        #region Update
         [HttpPut("{id}")]
         public IActionResult AtualizaFilme(int id, [FromBody] FilmeDto filmeDto)
         {
@@ -71,8 +78,10 @@ namespace APIFilmes.Controllers
             _context.SaveChanges();
             return NoContent();
         }
+        #endregion
 
 
+        #region Delete
         [HttpDelete("{id}")]
         public IActionResult DeleteFilme(int id)
         {
@@ -84,6 +93,7 @@ namespace APIFilmes.Controllers
             _context.SaveChanges();
             return NoContent();
         }
+        #endregion
 
     }
 }

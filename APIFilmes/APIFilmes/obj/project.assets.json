@@ -2071,11 +2071,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hugo\\Desktop\\APIFilmes\\APIFilmes\\APIFilmes.csproj",
+      "projectUniqueName": "C:\\Users\\Hugo\\Desktop\\pasta\\APIFilmes\\APIFilmes\\APIFilmes.csproj",
       "projectName": "APIFilmes",
-      "projectPath": "C:\\Users\\Hugo\\Desktop\\APIFilmes\\APIFilmes\\APIFilmes.csproj",
+      "projectPath": "C:\\Users\\Hugo\\Desktop\\pasta\\APIFilmes\\APIFilmes\\APIFilmes.csproj",
       "packagesPath": "C:\\Users\\Hugo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hugo\\Desktop\\APIFilmes\\APIFilmes\\obj\\",
+      "outputPath": "C:\\Users\\Hugo\\Desktop\\pasta\\APIFilmes\\APIFilmes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hugo\\AppData\\Roaming\\NuGet\\NuGet.Config",
