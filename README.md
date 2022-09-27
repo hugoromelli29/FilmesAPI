@@ -2,7 +2,7 @@
 
 > Status do projeto: completo
 
-O projeto é uma Rest API básica que roda na porta ```https://localhost:5001/``` e realiza CRUD de filmes. Também utiliza o conceito de DTOs. 
+O projeto é uma API simples que roda na porta ```https://localhost:5001/``` e realiza CRUD de filmes. Também utiliza o conceito de DTOs. 
 
 O projeto está escrito em C# no Framework .NET 5. O banco de dados utilizado é o MySQL Workbench. As requisições podem ser feitas através do Postman. 
 
